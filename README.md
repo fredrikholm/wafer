@@ -23,7 +23,14 @@ public class UsersControllerTests
     }
 }
 ```
-
+   
 ## What about the name?
 
 Web API Integration Testing Host Runner --> W.A.I.T.H.R. --> Waithr --> Wafer.
+
+
+## How do I get a hold of it?
+
+The lib is available as a NuGet package:
+
+    PM> Install-Package Wafer
