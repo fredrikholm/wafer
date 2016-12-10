@@ -4,7 +4,7 @@
 
 Wafer provides an in-memory testing host for your ASP.NET Web API. It creates an HttpServer for you and provide you with a simple way to issue "real" requests against your endpoints, like this:  
 
-`    
+```cs
 public class UsersControllerTests
 {
     private readonly HostRunner _hostRunner;
@@ -22,7 +22,7 @@ public class UsersControllerTests
         response.StatusCode.Should().Be(HttpStatusCode.OK);
     }
 }
-`
+```
 
 ## What about the name?
 
