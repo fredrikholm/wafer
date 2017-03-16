@@ -64,6 +64,11 @@ namespace Wafer
             return await Save(HttpMethod.Put, virtualUrl, data);
         }
 
+        public async Task<HttpResponseMessage> PutAsync(string virtualUrl)
+        {
+            return await Save<object>(HttpMethod.Put, virtualUrl, null);
+        }
+
         private async Task<HttpResponseMessage> Save<T>(HttpMethod method, string url, T data) where T : class
         {
             var request = CreateRequest(url, "application/json", method, data, new JsonMediaTypeFormatter());
